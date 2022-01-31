@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="style.css
+    "
+    />
+    <script
+      src="main.js
+    "
+      defer
+    ></script>
+  </head>
+  <body class="main">
+    <div id="title">
+   <h1 id="top">The Calculator 2.0 </h1>
+   <h5>Now comes with order of Operations</h5>
+  </div>
+   <div id="quote" style="display:none"></div>
+   <p>Example = (18 + 15 ÷ 5) ÷ (14 − 7) = 3 </p>
+   <h5>Type into Box or Use Numpad</h5>
+
+</div>
+</div>
+</div>
+    <h1><div id="result"></div></h1>
+
+    <input id="text" placeholder="Please insert your numbers" />
+    
+
+    <button id="compute">Compute Result</button>
+    <div id='tap'onClick="toggleFunction()"><h3>Click me for a Numpad</h3></div>
+  
+    <br />
+    <div id="calculator">
+     <button class="key" onClick="display('1')">1</button>
+     <button class="key" onClick="display('2')">2</button>
+     <button class="key" onClick="display('3')">3</button>
+     <button class="key" onClick="display('4')">4</button>
+     <button class="key" onClick="display('5')">5</button>
+     <button class="key" onClick="display('6')">6</button>
+     <button class="key" onClick="display('7')">7</button>
+     <button class="key" onClick="display('8')">8</button>
+     <button class="key" onClick="display('9')">9</button>
+     <button class="key" onClick="display('x')">x</button>
+     <button class="key" onClick="display('+')">+</button>
+     <button class="key" onClick="display('/')">÷</button>
+     <button class="key" onClick="display('(')">(</button>
+     <button class="key" onClick="display(')')">)</button>
+     <button class="key" onClick="display('.')">.</button>
+     <button class="key" onClick="clearScreen()">Clear</button>
+     <button id="equals" class="key" onClick="Compute(userInput.value)">=</button>
+
+ 
+    </div>
+    <div id='tap2'onClick="toggle2()" style="display:none"><h3>Click to remove Numpad</h3></div>
+    <div id="panda">Postfix expression of your question:</div>
+    <div id="postfix"> </div>
+  </body>
+</html>
